@@ -1,0 +1,56 @@
+.heading-primary {
+  color: var(--color-white);
+
+  &--main {
+    display: block;
+    font-size: 8rem;
+    font-weight: 400;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 5rem;
+    }
+
+    animation: moveInLeft 1s ease-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 3rem;
+    font-weight: 400;
+    
+    animation: moveInRight 1s ease-out;
+  }
+}
+
+.heading-tertiary {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+
+  &--dark {
+    color: var(--color-primary-dark);
+  }
+}
+
+.heading-quaternary {
+  font-size: 1.8rem;
+
+  &--repo {
+    display: none;
+    text-transform: uppercase;
+    color: var(--color-primary-dark);
+    margin: 5.2rem 0 1.8rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 0 1.2rem;
+    }
+  } 
+}
+
+.paragraph {
+  font-size: 1.8rem;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
